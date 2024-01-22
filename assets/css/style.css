@@ -8,13 +8,14 @@
 }
 
 :root {
-  --fs-1: 2.8rem;
+  --fs-1: 2.5rem;
   --fs-2: 2.3rem;
   --fs-3: 2rem;
   --fs-4: 1.6rem;
   --fs-5: 1.8rem;
   --fs-6: 1.3rem;
   --fs-7: 1rem;
+  --fs-8: 0.7rem;
 
   --fw-600: 600;
   --fw-700: 700;
@@ -217,17 +218,20 @@ header {
 .banner {
     display: flex;
     width: 100%;
-    height: 100vh; 
+    min-height: 100vh; 
     align-items: center;
     justify-content: center;
+    padding-bottom: 10%;
 }
 
 .banner-content {
     text-align: left;
-    margin-left: 10px;
+    margin-left: 7px;
+    margin-top: 25%;
+    padding-bottom: 50px;
 }
 
-.banner-content p{
+.banner-content p {
     margin-top: 15px;
     font-size: var(--fs-7);
 }
@@ -236,8 +240,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 2px;
 }
 
 .services {
@@ -245,6 +248,10 @@ header {
     min-height: 100vh;
     text-align: center;
     width: 100%;
+}
+
+.services .services-container h3 {
+    margin-bottom: 20%;
 }
 
 .services .container {  
@@ -255,6 +262,7 @@ header {
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }   
 
 .services .container .serviceBx {
@@ -309,6 +317,7 @@ header {
     min-height: 100vh;
     background-color: #c1f7f5cd;
     box-shadow: 0px 5px 10px 0px #aaa;
+    padding-top: 10%;
 }
 
 .packages h2 {
@@ -373,6 +382,7 @@ header {
     justify-content: center;
     background-color: var(--color-prussian-blue);
     align-items: center;
+    padding-top: 15%;
 }
 
 .form-contents {
@@ -422,7 +432,7 @@ header {
 
 .schedule {
     background-color: var(--color-prussian-blue);
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .schedule .schedule-contents {
